@@ -6,7 +6,7 @@ data:
     - keypoint
     - rgb
     - rgb
-  keypoint_file: ../../data/wlasl_2000/keypoints_hrnet_dark_coco_wholebody.pkl
+  keypoint_file: ../../data/wlasl_2000/keypoints_hrnet_dark_coco_wholebody.pkl # ✅
   use_keypoints:
     - pose
     - mouth_half
@@ -74,8 +74,6 @@ model:
     # pretrained_path_two:
     #   - results/two_frame64/ckpts/best.ckpt
     #   - results/two_frame32/ckpts/best.ckpt
-    GlossTokenizer:
-      gloss2id_file: ../../pretrained_models/mBart_de_2/gloss2ids.pkl  #deprecated
     s3d:
       pretrained_ckpt: ../../pretrained_models/s3ds_actioncls_ckpt #from K400
       use_block: 5
